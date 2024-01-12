@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Contacts</title>
+   
+</head>
+<body>
+    <div class="contacts-app">
+
+        <div class="contacts-container">
+            <table>
+                <thead>
+                    <tr class="header-row">
+                        <th>№</th>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Address</th>
+                        <th>Phone</th>
+                    </tr>
+                </thead>
+                <tbody id="contactsList"></tbody>
+            </table>
+        </div>
+
+
+        <div class="buttons-container">
+            <button onclick="contactsApp.showAddForm()">Добавить контакт</button>
+            <button onclick="contactsApp.showEditForm()">Редактировать контакт</button>
+            <button onclick="contactsApp.showRemoveForm()">Удалить контакт</button>
+            <button onclick="contactsApp.showSearchForm()">Поиск по контактам</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+
+</body>
+</html>
